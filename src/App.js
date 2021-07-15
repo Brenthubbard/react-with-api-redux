@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import Headlines from './components/Headlines';
+import Headlines from './Headlines';
 
 
 function App() {
