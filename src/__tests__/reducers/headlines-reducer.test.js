@@ -3,9 +3,14 @@ import * as c from './../../actions/ActionTypes';
 
 
 describe('headlinesReducer', () => {
-
+  
   let action; 
-
+  
+  const loadingState = {
+    isLoading: true,
+    headlines: [],
+    error: null
+  };
   const defaultState = {
     isLoading: false,
     headlines: [],
@@ -34,11 +39,6 @@ describe('headlinesReducer', () => {
     );
   });
 
-  const loadingState = {
-    isLoading: true,
-    headlines: [],
-    error: null
-  };
 
   test('successfully getting headlines should change isLoading to false and update headlines', () => {
     const headlines = "A headline";
